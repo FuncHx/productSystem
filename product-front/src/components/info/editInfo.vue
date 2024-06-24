@@ -46,7 +46,6 @@ export default {
                 if (res.code == 200){
                     this.$message({type: "success", message: "修改成功"})
                     this.$store.dispatch("user/GetUserInfo")
-                    window.location.reload();
                 }else{
                     this.$message({type: "error", message: res.message})
                 }

@@ -4,6 +4,7 @@ import { Notification, MessageBox, Message } from 'element-ui'
 import router from '@/router'
 import store from '@/store'
 
+
 axios.defaults.headers['Content-Type'] = 'application/json;charset=utf-8'
 // 创建axios实例
 const service = axios.create({

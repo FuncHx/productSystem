@@ -15,7 +15,6 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
@@ -24,8 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 import os
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'media')    # 配置媒体文件处理
-
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')  # 配置媒体文件处理
 
 SECRET_KEY = 'django-insecure-$oc&%gxur!jpu)^xgmpg9gqg_!b0+1hg)6zy@5uy4sxf)dg+39'
 
@@ -34,9 +32,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
 # Application definition
-
 
 
 REST_FRAMEWORK = {
@@ -53,6 +49,7 @@ REST_FRAMEWORK = {
 }
 
 from datetime import timedelta
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -151,7 +148,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'productSystem.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
@@ -160,12 +156,11 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'product_system',
         'USER': 'root',
-        'PASSWORD': 'cyh0110',
+        'PASSWORD': '123123',
         'HOST': 'localhost',
         'PORT': 3306,
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
@@ -185,7 +180,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
 
@@ -199,7 +193,6 @@ USE_L10N = True
 
 USE_TZ = True
 
-
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
@@ -209,4 +202,3 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
